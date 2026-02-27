@@ -12,7 +12,7 @@ exports.handler = async function(event, context) {
     };
   }
 
-  try {
+  try 
     const body = JSON.parse(event.body);
 
     const response = await fetch('https://api.openai.com/v1/chat/completions', {
